@@ -12,7 +12,7 @@ const Unit = () => {
         height: '1.5rem',
         background: Math.random()*10 < 1 ? 'pink': 'whitesmoke', // 10% chance of pink snow
         borderRadius: '50%',
-        zIndex: 0, // Set a negative value to move it to the back
+        zIndex: 1, // Set a negative value to move it to the back
         opacity: 0.8 // Make it slightly transparent
       }}
       drag
@@ -30,42 +30,11 @@ const Unit = () => {
 
 const Snow = () => {
   return (
-    <>
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-      <Unit />
-    </>
+    <div>
+      {Array.from({ length: 50 }).map((_, i) => (
+        <Unit key={i} />
+      ))}
+    </div>
   );
 };
 

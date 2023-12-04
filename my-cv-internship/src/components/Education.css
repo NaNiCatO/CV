@@ -1,0 +1,22 @@
+.education-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.education-block {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    z-index: 2;
+}
+
+.education-content {
+    text-align: left;
+}
+
+.education-label {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
