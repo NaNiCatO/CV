@@ -2,21 +2,34 @@ import React from "react";
 import './Education.css';
 import { v4 as uuidv4 } from 'uuid';
 import { motion } from 'framer-motion';
+import CPPIcon from "./ed-pic/C++.png";
+import JavaIcon from "./ed-pic/Java.png";
+import PythonIcon from "./ed-pic/Python.png";
+import JavaScriptIcon from "./ed-pic/JavaScript.png";
+import HTMLIcon from "./ed-pic/HTML.png";
+import FastapiIcon from "./ed-pic/Fastapi.png";
+import RustIcon from "./ed-pic/Rust.png";
+import ReactIcon from "./ed-pic/React.png";
+import NodeJSIcon from "./ed-pic/NodeJS.png";
+import SQLIcon from "./ed-pic/SQL.png";
+import CircleIcon from "./ed-pic/icons8-circle-48.png";
+import CircleIcon1 from "./ed-pic/icons8-circle-48 (1).png";
+
 
 const Language = [
-    { pic: "./ed-pic/C++.png", name: "C++", point: 6 },
-    { pic: "./ed-pic/Java.png", name: "Java" ,point: 5 },
-    { pic: "./ed-pic/Python.png", name: "Python" ,point: 8 },
-    { pic: "./ed-pic/JavaScript.png", name: "JavaScript" ,point: 6 },
-    { pic: "./ed-pic/HTML.png", name: "HTML" ,point: 6 },
-    { pic: "./ed-pic/Fastapi.png", name: "Fastapi" ,point: 7 },
-    { pic: "./ed-pic/Rust.png", name: "Rust",point: 2 },
+    { pic: CPPIcon, name: "C++", point: 6 },
+    { pic: JavaIcon, name: "Java" ,point: 5 },
+    { pic: PythonIcon, name: "Python" ,point: 8 },
+    { pic: JavaScriptIcon, name: "JavaScript" ,point: 6 },
+    { pic: HTMLIcon, name: "HTML" ,point: 6 },
+    { pic: FastapiIcon, name: "Fastapi" ,point: 7 },
+    { pic: RustIcon, name: "Rust",point: 2 },
 ];
 
 const Learning = [
-    { pic: "./ed-pic/React.png", name: "React" },
-    { pic: "./ed-pic/NodeJS.png", name: "NodeJS" },
-    { pic: "./ed-pic/SQL.png", name: "SQL" },
+    { pic: ReactIcon, name: "React" },
+    { pic: NodeJSIcon, name: "NodeJS" },
+    { pic: SQLIcon, name: "SQL" },
 ];
 
 
@@ -67,17 +80,20 @@ const Education = () => {
             </div>
             <div className="education-block">
                 <div className="education-topic"><h1>Knowledge</h1></div>
+                <div className="education-knowledge">
                     {Language.map((lang, index) => (
-                        <div className="education-container" key={uuidv4()}>
-                            <img src={lang.pic} alt={lang.name} key={uuidv4()}/>
+                        <div className="education-knowledge-block" key={uuidv4()}>
+                            <img src={lang.pic} alt={lang.name} key={uuidv4()} className="Icon"/>
                             {Array.from({ length: lang.point }).map((_, i) => (
-                                <img src='/ed-pic/icons8-circle-48 (1).png' alt='⚫' key={uuidv4()}/>
+                                <img src={CircleIcon} alt='⚫' key={uuidv4()} className="point"/>
                             ))}
                             {Array.from({ length: 8-lang.point }).map((_, i) => (
-                                <img src='/ed-pic/icons8-circle-48.png' alt='◯' key={uuidv4()}/>
+                                <img src={CircleIcon1} alt='◯' key={uuidv4()} className="point"/>
                             ))}
                         </div>
+
                     ))}
+                </div>
             </div>
 
         </>
