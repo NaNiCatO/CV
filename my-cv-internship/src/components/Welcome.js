@@ -1,4 +1,4 @@
-import './Intro.css';
+import './Welcome.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { motion, useAnimationControls } from 'framer-motion';
@@ -26,6 +26,9 @@ const contents = {
 }
 
 const Personal = () => {
+    const handleNavigate = () => {
+        window.location.href = '/personal';
+    }
     const [visible, setVisible] = useState(false)
     const handleClicked = () => {
         setVisible(!visible)
@@ -36,15 +39,14 @@ const Personal = () => {
             <motion.div className="topic"
             initial='hidden'
             animate='visible'
-            variants={topics}
-            onClick={handleClicked}>
+            variants={topics}>
                 <motion.div className="personal"
                     drag
                     dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-                >
+                    onClick={handleClicked}>
                     Personal
                 </motion.div>
-                <motion.div className="personal-content"
+                <motion.div className="content"
                     custom={visible}
                     initial='hidden'
                     animate='visible'
@@ -54,6 +56,7 @@ const Personal = () => {
                 >
                     This section is about me!
                     are about name, age, address, hobby, favorite game and etc.
+                    <p className='link' onClick={handleNavigate}>Click here to see more about me!</p>
                 </motion.div>
             </motion.div>
         </>
@@ -61,6 +64,10 @@ const Personal = () => {
 }
 
 const Education = () => {
+    const handleNavigate = () => {
+        window.location.href = '/education';
+    }
+
     const [visible, setVisible] = useState(false)
     const handleClicked = () => {
         setVisible(!visible)
@@ -71,15 +78,14 @@ const Education = () => {
         <motion.div className="topic"
         initial='hidden'
         animate='visible'
-        variants={topics}
-        onClick={handleClicked}>
+        variants={topics}>
             <motion.div className="education"
                 drag
                 dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            >
+                onClick={handleClicked}>
                 Education
             </motion.div>
-            <motion.div className="education-content"
+            <motion.div className="content"
                 custom={visible}
                 initial='hidden'
                 animate='visible'
@@ -89,6 +95,7 @@ const Education = () => {
             >
                 This section is about my education!
                 are about name of school, year of study, and etc.
+                <p className='link' onClick={handleNavigate}>Click here for about my education!</p>
             </motion.div>
         </motion.div>
         </>
@@ -96,6 +103,10 @@ const Education = () => {
 }
 
 const Projects = () => {
+    const handleNavigate = () => {
+        window.location.href = '/project';
+    }
+
     const [visible, setVisible] = useState(false)
     const handleClicked = () => {
         setVisible(!visible)
@@ -106,15 +117,14 @@ const Projects = () => {
         <motion.div className="topic"
         initial='hidden'
         animate='visible'
-        variants={topics}
-        onClick={handleClicked}>
+        variants={topics}>
             <motion.div className="projects"
                 drag
                 dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            >
+                onClick={handleClicked}>
                 Project
             </motion.div>
-            <motion.div className="projects-content"
+            <motion.div className="content"
                 custom={visible}
                 initial='hidden'
                 animate='visible'
@@ -124,6 +134,7 @@ const Projects = () => {
             >
                 This section is about my project!
                 are about name of project, year of project, and etc.
+                <p className='link' onClick={handleNavigate}>Click here to see more about my project!</p>
             </motion.div>
         </motion.div>
         </>

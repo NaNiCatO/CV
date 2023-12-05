@@ -36,6 +36,7 @@ const info = [
     { id: "Hobby", content: "Gaming and sometime watch some tech channel" },
     { id: "Date of Birth", content: "January 1, 2004" },
     { id: "Address", content: "655/11 Soi Chalong Krung 1, Lat Krabang Sub-district, Lat Krabang District, Bangkok 10520, Thailand" },
+    { id: "My interest", content: "AI, backend and some frontend." },
 ];
 const Information = () => {
     return (
