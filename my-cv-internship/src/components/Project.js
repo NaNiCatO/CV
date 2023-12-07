@@ -2,6 +2,7 @@ import React from "react";
 import './Project.css';
 import { motion } from "framer-motion";
 
+
 import python_financial from "./project-pic/python-financial.png";
 import cpp_banking from "./project-pic/cpp-banking.png";
 import HTML_Fastapi from "./project-pic/HTML&Fastapi-forum&bookingseat.png";
@@ -88,5 +89,6 @@ const Project = () => {
         </>
     )
 }
+
 
 export default Project;

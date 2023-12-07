@@ -3,6 +3,7 @@ import './Education.css';
 import { v4 as uuidv4 } from 'uuid';
 import { motion } from 'framer-motion';
 
+
 import CPPIcon from "./ed-pic/C++.png";
 import JavaIcon from "./ed-pic/Java.png";
 import PythonIcon from "./ed-pic/Python.png";
@@ -169,5 +170,6 @@ const Education = () => {
         </>
     )
 }
+
 
 export default Education;

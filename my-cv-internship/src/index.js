@@ -1,15 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import {App, PersonalPage, EducationPage, ProjectPage} from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Welcome from './components/Welcome';
-import Snow from './components/Snow';
-import Personal from './components/Personal';
-import Education from './components/Education';
-import Project from './components/Project';
 
 
 const router = createBrowserRouter([
@@ -19,15 +14,15 @@ const router = createBrowserRouter([
   },
   {
       path: '/personal',
-      element: <Personal />,
+      element: <PersonalPage />,
   },
   {
       path: '/education',
-      element: <Education />,
+      element: <EducationPage />,
   },
   {
       path: '/project',
-      element: <Project />,
+      element: <ProjectPage />,
   },
 ]);
 
