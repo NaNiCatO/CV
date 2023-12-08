@@ -80,7 +80,7 @@ const Project = () => {
                         <h3>React, NodeJS: CV</h3>
                     </div>
                     <div className="project-detail">
-                        And this is my CV that I have done with React and NodeJS.
+                        And this is my CV that I have done with React.
                     </div>
                     </div>
                     </div>
