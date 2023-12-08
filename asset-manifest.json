@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e7c2abb.css",
+    "main.js": "/static/js/main.11394021.js",
+    "static/js/787.e5bf260a.chunk.js": "/static/js/787.e5bf260a.chunk.js",
+    "static/media/python-financial.png": "/static/media/python-financial.13b5b9ba1476efdf7d33.png",
+    "static/media/JavaScript.png": "/static/media/JavaScript.649a896f8c09e1c99df5.png",
+    "static/media/React.png": "/static/media/React.73dbb5bcec516da82694.png",
+    "static/media/cpp&assembly.png": "/static/media/cpp&assembly.e2f9f794d146e8508a82.png",
+    "static/media/C++.png": "/static/media/C++.3f8430b31b0960aae7e0.png",
+    "static/media/Rust.png": "/static/media/Rust.4b5440cfe35be68ed2d0.png",
+    "static/media/NodeJS.png": "/static/media/NodeJS.007e99f68b718e476aba.png",
+    "static/media/Java.png": "/static/media/Java.66d5a4fef00821dfe115.png",
+    "static/media/Python.png": "/static/media/Python.448fb2a83595fa5c5c8a.png",
+    "static/media/cpp-banking.png": "/static/media/cpp-banking.2824bdd1afc38421828a.png",
+    "static/media/HTML.png": "/static/media/HTML.a92a549a591f4acb527a.png",
+    "static/media/HTML&Fastapi-forum&bookingseat.png": "/static/media/HTML&Fastapi-forum&bookingseat.17f3e6055fecea20bcab.png",
+    "index.html": "/index.html",
+    "main.1e7c2abb.css.map": "/static/css/main.1e7c2abb.css.map",
+    "main.11394021.js.map": "/static/js/main.11394021.js.map",
+    "787.e5bf260a.chunk.js.map": "/static/js/787.e5bf260a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e7c2abb.css",
+    "static/js/main.11394021.js"
+  ]
+}
