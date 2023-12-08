@@ -5,7 +5,6 @@ import Snow from './components/Snow';
 import Personal from './components/Personal';
 import Education from './components/Education';
 import Project from './components/Project';
-import Test from './Test';
 
 
 
@@ -13,8 +12,8 @@ export function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Test />
-        {/* <Snow /> */}
+        <Welcome />
+        <Snow />
       </header>
     </div>
   );

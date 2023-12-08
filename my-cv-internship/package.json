@@ -1,6 +1,5 @@
 {
-  "homepage": "https://NaNiCatO/github.io/CV",
-    "name": "my-cv-internship",
+  "name": "my-cv-internship",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5000",
@@ -13,15 +12,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-visibility-sensor": "^5.1.1",
     "uuid": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

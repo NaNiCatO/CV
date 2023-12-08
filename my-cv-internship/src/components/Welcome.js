@@ -143,7 +143,7 @@ const Projects = () => {
 
 
 const Welcome = () => {
-    const massage = ["Hi, Click me!", "Hi!, I'm a 2nd year student at the KMITL (King Mongkut's Institute of Technology Ladkrabang) , studying Software Engineer. I'm currently looking for a 2023 summer internship.", "I'm interested in AI, Web Developer, and Data Science. I'm also learning React and Node.js", "And right now I'm working with CV-Internship project. in this project I'm using React, Framer Motion, and CSS to make this website.You can click on the text below to see more about me!"]
+    const massage = ["Hi, Click me!", "Hi!, I'm a 2nd year student at the KMITL (King Mongkut's Institute of Technology Ladkrabang) , studying Software Engineer. I'm currently looking for a 2023 summer internship.", "I'm interested in AI, Web Developer, and Data Science. I'm also learning React", "And right now I'm working with CV-Internship project. in this project I'm using React, Framer Motion, and CSS to make this website.You can click on the text below to see more about me!"]
     const [i, setI] = useState(0)
     const handleDialog = () => {
         setI((prevI) => (prevI + 1) % 4);
